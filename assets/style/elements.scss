@@ -1,0 +1,122 @@
+h1 {
+  font-family: $title-font;
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  color: $secondary-color-main;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: $secondary-color-dark;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $secondary-color-dark-transparent;
+    @include text-bold;
+  }
+}
+
+section {
+  background-color: $light-color;
+  padding: $spacing-5;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: $spacing-3;
+    color: $secondary-color-dark;
+  }
+
+  &.dark {
+    background-color: $primary-color-main;
+    color: $light-color;
+
+    h1 {
+      color: $primary-color-light;
+    }
+
+    a {
+      color: $light-color;
+      &:hover,
+      &:active {
+        color: $primary-color-light;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: $spacing-3;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px;
+}
+
+.button {
+  transition: all 1s ease-out;
+  padding: 10px 15px;
+  border: 1px solid $secondary-color-main;
+  min-width: 150px;
+  margin-right: 6px;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+
+  &:hover {
+    background-color: $primary-color-light;
+    color: $primary-color-dark;
+  }
+
+  &.primary {
+    background-color: $primary-color-main;
+    color: $light-color;
+
+    &:hover {
+      background-color: $secondary-color-light;
+      color: $primary-color-dark;
+    }
+  }
+}
+
+.divider {
+  width: 40%;
+  border-color: $primary-color-main;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: $secondary-color-dark;
+    display: inline-block;
+    border: 2px solid $primary-color-main;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin: 0 0 0 -3px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .divider {
+    width: 90%;
+  }
+}
+
+.icon {
+  max-width: 3rem;
+  font-size: 3rem;
+  color: $secondary-color-main;
+}
