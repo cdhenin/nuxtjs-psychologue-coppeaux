@@ -71,6 +71,9 @@ export default {
         'faBars',
         'faAt',
         'faCalendarCheck',
+        'faUsers',
+        'faUserGraduate',
+        'faChildReaching'
       ],
     },
   },
@@ -105,4 +108,6 @@ export default {
     Disallow: '/',
     Sitemap: `${BASE_URL}sitemap.xml`,
   },
+
+  generate: { fallback: true }
 }

@@ -36,21 +36,19 @@
           <hr class="divider" />
         </div>
         <div class="description">
-          <div style>
-            <h2>Adultes</h2>
-            <p>60 € - 1 heure</p>
-            <h2>Etudiants</h2>
-            <p>40€ - 1 heure</p>
+          <h2>Adultes</h2>
+          <p>60 € - 1 heure</p>
+          <h2>Etudiants</h2>
+          <p>40€ - 1 heure</p>
 
-            <h2>Enfants / adolescents</h2>
-            <ul>
-              <li>
-                60 € - 1h, premier entretien en présence d’au moins un des
-                parents
-              </li>
-              <li>50€ - 45 min (suivi)</li>
-            </ul>
-          </div>
+          <h2>Enfants / adolescents</h2>
+          <ul>
+            <li>
+              60 € - 1h, premier entretien en présence d’au moins un des
+              parents
+            </li>
+            <li>50€ - 45 min (suivi)</li>
+          </ul>
           <h2>Modalités de Paiements</h2>
           <p>
             Le paiement s’effectue à chaque séance en espèces ou par paiement

@@ -6,10 +6,7 @@
         <hr class="divider" />
         <div class="group">
           <span class="icon-wrapper">
-            <font-awesome-icon
-              :icon="['fas', 'users-viewfinder']"
-              class="icon"
-            />
+            <font-awesome-icon :icon="['fas', 'users-viewfinder']" class="icon" />
           </span>
 
           <div class="description">
@@ -117,6 +114,10 @@ export default {
   gap: 2rem;
 }
 
+.description {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
 @media (max-width: 768px) {
   .group {
     flex-direction: column;
@@ -125,10 +126,9 @@ export default {
     border-bottom: 2px solid;
     border-right: none;
   }
-}
 
-.description {
-  padding: 2rem;
-  margin-bottom: 2rem;
+  .description {
+    padding: 0;
+  }
 }
 </style>
