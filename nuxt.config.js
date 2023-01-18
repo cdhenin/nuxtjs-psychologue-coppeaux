@@ -2,6 +2,9 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  router: {
+    base: '/coppeaux/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Amélie Coppeaux - Psychologue clinicienne à Toulouse',
@@ -15,9 +18,14 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Enfants - Adolescents - Adultes. Bilan intellectuel et cognitif (WISC 5).',
+          'Diplômée de l’école de Psychologues Praticiens de Paris, je vous reçois dans mon cabinet pour des prises en charge d\'enfants, d’adolescents et d’adultes. Formée à la passation de bilans lors de mes études, puis psychologue de l’Education Nationale, je propose également les bilans cognitifs et intellectuels pour les enfants de 6 à 16 ans (WISC-V).',
       },
-      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'format-detection', content: 'telephone=yes' },
+      { name: 'og:title', content: 'Amélie Coppeaux - Psychologue clinicienne à Toulouse' },
+      { name: 'og:description', content: 'Diplômée de l’école de Psychologues Praticiens de Paris, je vous reçois dans mon cabinet pour des prises en charge d\'enfants, d’adolescents et d’adultes. Formée à la passation de bilans lors de mes études, puis psychologue de l’Education Nationale, je propose également les bilans cognitifs et intellectuels pour les enfants de 6 à 16 ans (WISC-V).' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:locale', content: 'fr_FR' },
+      { name: 'robots', content: 'noindex, nofollow' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -55,7 +63,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
   styleResources: {
     // Order is important before variables and mixins are used in the others files and should be loaded first
@@ -65,4 +73,24 @@ export default {
       './assets/style/*.scss',
     ],
   },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    cacheTime: 1000 * 60 * 60 * 2,
+    trailingSlash: true,
+    gzip: true,
+    hostname: 'https://cdhenin.github.io/',
+    defaults: {
+      changefreq: 'yearly',
+      priority: 0.8,
+      lastmod: new Date()
+    }
+  },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+    Sitemap: 'https://cdhenin.github.io/coppeaux/sitemap.xml'
+  }
+
 }
