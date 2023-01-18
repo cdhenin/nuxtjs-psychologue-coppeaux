@@ -9,38 +9,57 @@
           <h3>Bilan intellectuel et cognitif (WISC 5)</h3>
         </div>
         <div class="buttons">
-          <NuxtLink to="/contact" class="button primary"
-            >Prendre rendez-vous</NuxtLink
-          >
+          <NuxtLink aria-label="Visiter la page contact" to="/contact" class="button primary">
+            Prendre rendez-vous
+          </NuxtLink>
         </div>
       </div>
     </section>
     <section id="contact" class="dark flex-grow-vertical">
       <div class="flex-row-space-around">
         <div class="flex-row-space-around-item">
-          <font-awesome-icon :icon="['fas', 'location-dot']" class="icon" />
+          <font-awesome-icon
+            aria-hidden="false"
+            aria-label="Adresse du cabinet"
+            role="heading"
+            :icon="['fas', 'location-dot']"
+            class="icon"
+          />
           <div>
             <p>3 Rue Ledru-Rollin</p>
             <p>31300 Toulouse</p>
           </div>
         </div>
         <div class="flex-row-space-around-item">
-          <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
-          <a href="tel:0687899217" target="_blank" rel="noopener noreferrer"
-            >06.87.89.92.17</a
-          >
+          <font-awesome-icon
+            aria-hidden="false"
+            aria-label="Téléphone"
+            role="heading"
+            :icon="['fas', 'phone']"
+            class="icon"
+          />
+          <a href="tel:0687899217" target="_blank" rel="noopener noreferrer">06.87.89.92.17</a>
         </div>
         <div class="flex-row-space-around-item">
-          <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
+          <font-awesome-icon
+            aria-hidden="false"
+            aria-label="Adresse email"
+            role="heading"
+            :icon="['fas', 'envelope']"
+            class="icon"
+          />
           <div style="display: flex; flex-direction: column">
             <span>ameliecoppeaux.psychologue</span>
 
-            <span style="display: flex; justify-content: center"
-              ><font-awesome-icon
+            <span style="display: flex; justify-content: center">
+              <font-awesome-icon
                 style="max-width: 1.2rem"
+                aria-label="@"
+                aria-hidden="false"
+                alt="@"
                 :icon="['fas', 'at']"
-              />gmail.com</span
-            >
+              />gmail.com
+            </span>
           </div>
         </div>
       </div>
@@ -52,6 +71,7 @@
       allowfullscreen
       loading="lazy"
       height="200"
+      aria-label="google map widget avec adresse du cabinet"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
   </div>
@@ -81,10 +101,10 @@ export default {
   justify-content: center;
   align-items: center;
   transition: background-image 1s;
-  background-image: url('~/assets/img/home.jpg');
+  background-image: url("~/assets/img/home.jpg");
 
   &::before {
-    content: '';
+    content: "";
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;

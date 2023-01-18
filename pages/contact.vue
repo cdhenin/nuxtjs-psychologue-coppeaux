@@ -14,14 +14,14 @@
       <div class="container">
         <div class="flex-row-space-around">
           <div class="flex-row-space-around-item">
-            <font-awesome-icon :icon="['fas', 'location-dot']" class="icon" />
+            <font-awesome-icon aria-hidden="false" aria-label="Adresse du cabinet" role="heading" :icon="['fas', 'location-dot']" class="icon" />
             <div>
               <p>3 Rue Ledru-Rollin</p>
               <p>31300 Toulouse</p>
             </div>
           </div>
           <div class="flex-row-space-around-item">
-            <font-awesome-icon :icon="['fas', 'phone']" class="icon" />
+            <font-awesome-icon aria-hidden="false" aria-label="Téléphone" role="heading" :icon="['fas', 'phone']" class="icon" />
             <a
               class="text"
               href="tel:0687899217"
@@ -31,13 +31,16 @@
             >
           </div>
           <div class="flex-row-space-around-item">
-            <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
+            <font-awesome-icon aria-hidden="false" aria-label="Adresse email" role="heading" :icon="['fas', 'envelope']" class="icon" />
             <div style="display: flex; flex-direction: column">
               <span>ameliecoppeaux.psychologue</span>
 
               <span style="display: flex; justify-content: center">
                 <font-awesome-icon
                   style="max-width: 1.2rem"
+                  aria-label="@"
+                  aria-hidden="false"
+                  alt="@"
                   :icon="['fas', 'at']"
                 />gmail.com
               </span>
@@ -61,6 +64,7 @@
       allowfullscreen
       loading="lazy"
       height="200"
+      aria-label="google map widget avec adresse du cabinet"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
   </div>
@@ -95,7 +99,7 @@ $picture-height: 200px;
 .cabinet {
   height: $picture-height;
   object-fit: cover;
-  width: 1024px;
+  max-width: 1024px;
   z-index: 1;
 }
 

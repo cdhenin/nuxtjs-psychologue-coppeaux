@@ -6,7 +6,7 @@
         <hr class="divider" />
         <div class="presentation">
           <img
-            alt="photo amélie coppeaux psychologue"
+            alt="portrait amélie coppeaux psychologue"
             width="200"
             src="~/assets/img/amélie.jpg"
           />
