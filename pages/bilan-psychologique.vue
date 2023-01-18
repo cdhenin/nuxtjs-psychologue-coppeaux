@@ -6,7 +6,10 @@
         <hr class="divider" />
         <div class="group">
           <span class="icon-wrapper">
-            <font-awesome-icon :icon="['fas', 'users-viewfinder']" class="icon" />
+            <font-awesome-icon
+              :icon="['fas', 'users-viewfinder']"
+              class="icon"
+            />
           </span>
 
           <div class="description">
@@ -83,6 +86,7 @@
         </div>
       </div>
     </section>
+    <RendezVous />
   </div>
 </template>
 

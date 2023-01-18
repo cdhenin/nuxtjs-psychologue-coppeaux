@@ -1,6 +1,10 @@
 <template>
   <nav>
-    <button aria-label="Afficher Menu" class="mobile-menu-button" @click="toggleMenu">
+    <button
+      aria-label="Afficher Menu"
+      class="mobile-menu-button"
+      @click="toggleMenu"
+    >
       <font-awesome-icon class="icon" :icon="['fas', 'bars']" />
     </button>
 
@@ -79,8 +83,8 @@ nav {
     .navbar-subtitle {
       margin: 0;
       font-size: 1.2rem;
-      font-family: teresatitle, GillSansRegular, "Gill Sans MT", "Gill Sans",
-        Calibri, "Trebuchet MS", sans-serif;
+      font-family: teresatitle, GillSansRegular, 'Gill Sans MT', 'Gill Sans',
+        Calibri, 'Trebuchet MS', sans-serif;
       text-transform: uppercase;
       text-align: right;
     }

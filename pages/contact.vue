@@ -68,7 +68,7 @@
           <div class="flex-row-space-around-item">
             <font-awesome-icon
               aria-hidden="false"
-              aria-label="Adresse email"
+              aria-label="Rendez-vous doctolib"
               role="heading"
               :icon="['fas', 'calendar-check']"
               class="icon"

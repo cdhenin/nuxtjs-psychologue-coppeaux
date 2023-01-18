@@ -1,5 +1,5 @@
-const ROUTER_BASE = '/coppeaux/';
-const BASE_URL = `${process.env.HOSTNAME}${ROUTER_BASE}`;
+const ROUTER_BASE = '/coppeaux/'
+const BASE_URL = `${process.env.HOSTNAME}${ROUTER_BASE}`
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -39,7 +39,9 @@ export default {
       { name: 'og:locale', content: 'fr_FR' },
       { name: 'robots', content: 'noindex, nofollow' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -73,7 +75,7 @@ export default {
         'faCalendarCheck',
         'faUsers',
         'faUserGraduate',
-        'faChildReaching'
+        'faChildReaching',
       ],
     },
   },
@@ -109,5 +111,5 @@ export default {
     Sitemap: `${BASE_URL}sitemap.xml`,
   },
 
-  generate: { fallback: true }
+  generate: { fallback: true },
 }

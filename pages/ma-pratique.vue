@@ -44,8 +44,7 @@
           <h2>Enfants / adolescents</h2>
           <ul>
             <li>
-              60 € - 1h, premier entretien en présence d’au moins un des
-              parents
+              60 € - 1h, premier entretien en présence d’au moins un des parents
             </li>
             <li>50€ - 45 min (suivi)</li>
           </ul>
