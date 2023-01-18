@@ -1,9 +1,12 @@
+const ROUTER_BASE = '/coppeaux/';
+const BASE_URL = `${process.env.HOSTNAME}${ROUTER_BASE}`;
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   router: {
-    base: '/coppeaux/',
+    base: ROUTER_BASE,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -31,11 +34,12 @@ export default {
           "Diplômée de l’école de Psychologues Praticiens de Paris, je vous reçois dans mon cabinet pour des prises en charge d'enfants, d’adolescents et d’adultes. Formée à la passation de bilans lors de mes études, puis psychologue de l’Education Nationale, je propose également les bilans cognitifs et intellectuels pour les enfants de 6 à 16 ans (WISC-V).",
       },
       { name: 'og:type', content: 'website' },
-      { name: 'og:image', content: '/og-image.png' },
+      { name: 'og:image', content: `${BASE_URL}og-image.png` },
+      { name: 'og:url', content: BASE_URL },
       { name: 'og:locale', content: 'fr_FR' },
       { name: 'robots', content: 'noindex, nofollow' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -88,7 +92,7 @@ export default {
     cacheTime: 1000 * 60 * 60 * 2,
     trailingSlash: true,
     gzip: true,
-    hostname: 'https://cdhenin.github.io/',
+    hostname: process.env.HOSTNAME,
     defaults: {
       changefreq: 'yearly',
       priority: 0.8,
@@ -99,6 +103,6 @@ export default {
   robots: {
     UserAgent: '*',
     Disallow: '/',
-    Sitemap: 'https://cdhenin.github.io/coppeaux/sitemap.xml',
+    Sitemap: `${BASE_URL}sitemap.xml`,
   },
 }

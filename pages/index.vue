@@ -107,7 +107,7 @@ export default {
   name: 'IndexPage',
   head() {
     return {
-      title: 'Accueil - Amélie Coppeaux Psychologue clinicienne à Toulouse',
+      title: 'Amélie Coppeaux Psychologue clinicienne à Toulouse',
     }
   },
 }
