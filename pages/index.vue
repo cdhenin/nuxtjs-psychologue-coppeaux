@@ -9,7 +9,11 @@
           <h3>Bilan intellectuel et cognitif (WISC 5)</h3>
         </div>
         <div class="buttons">
-          <NuxtLink aria-label="Visiter la page contact" to="/contact" class="button primary">
+          <NuxtLink
+            aria-label="Visiter la page contact"
+            to="/contact"
+            class="button primary"
+          >
             Prendre rendez-vous
           </NuxtLink>
         </div>
@@ -38,7 +42,9 @@
             :icon="['fas', 'phone']"
             class="icon"
           />
-          <a href="tel:0687899217" target="_blank" rel="noopener noreferrer">06.87.89.92.17</a>
+          <a href="tel:0687899217" target="_blank" rel="noopener noreferrer"
+            >06.87.89.92.17</a
+          >
         </div>
         <div class="flex-row-space-around-item">
           <font-awesome-icon
@@ -61,6 +67,25 @@
               />gmail.com
             </span>
           </div>
+        </div>
+
+        <div class="flex-row-space-around-item">
+          <a
+            class="button doctolib"
+            href="https://www.doctolib.fr/psychologue/toulouse/amelie-coppeaux"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Prendre rendez-vous
+            <img
+              src="~/assets/img/logo_doctolib.svg"
+              aria-hidden="false"
+              aria-label="logo Doctolib"
+              role="text"
+              height="28"
+              alt="logo doctolib"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -101,10 +126,10 @@ export default {
   justify-content: center;
   align-items: center;
   transition: background-image 1s;
-  background-image: url("~/assets/img/home.jpg");
+  background-image: url('~/assets/img/home.jpg');
 
   &::before {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;

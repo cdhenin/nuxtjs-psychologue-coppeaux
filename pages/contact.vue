@@ -14,14 +14,26 @@
       <div class="container">
         <div class="flex-row-space-around">
           <div class="flex-row-space-around-item">
-            <font-awesome-icon aria-hidden="false" aria-label="Adresse du cabinet" role="heading" :icon="['fas', 'location-dot']" class="icon" />
+            <font-awesome-icon
+              aria-hidden="false"
+              aria-label="Adresse du cabinet"
+              role="heading"
+              :icon="['fas', 'location-dot']"
+              class="icon"
+            />
             <div>
               <p>3 Rue Ledru-Rollin</p>
               <p>31300 Toulouse</p>
             </div>
           </div>
           <div class="flex-row-space-around-item">
-            <font-awesome-icon aria-hidden="false" aria-label="Téléphone" role="heading" :icon="['fas', 'phone']" class="icon" />
+            <font-awesome-icon
+              aria-hidden="false"
+              aria-label="Téléphone"
+              role="heading"
+              :icon="['fas', 'phone']"
+              class="icon"
+            />
             <a
               class="text"
               href="tel:0687899217"
@@ -31,7 +43,13 @@
             >
           </div>
           <div class="flex-row-space-around-item">
-            <font-awesome-icon aria-hidden="false" aria-label="Adresse email" role="heading" :icon="['fas', 'envelope']" class="icon" />
+            <font-awesome-icon
+              aria-hidden="false"
+              aria-label="Adresse email"
+              role="heading"
+              :icon="['fas', 'envelope']"
+              class="icon"
+            />
             <div style="display: flex; flex-direction: column">
               <span>ameliecoppeaux.psychologue</span>
 
@@ -46,7 +64,34 @@
               </span>
             </div>
           </div>
+
+          <div class="flex-row-space-around-item">
+            <font-awesome-icon
+              aria-hidden="false"
+              aria-label="Adresse email"
+              role="heading"
+              :icon="['fas', 'calendar-check']"
+              class="icon"
+            />
+            <a
+              class="button doctolib"
+              href="https://www.doctolib.fr/psychologue/toulouse/amelie-coppeaux"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Prendre rendez-vous
+              <img
+                src="~/assets/img/logo_doctolib.svg"
+                aria-hidden="false"
+                aria-label="logo Doctolib"
+                role="text"
+                height="28"
+                alt="logo doctolib"
+              />
+            </a>
+          </div>
         </div>
+
         <p>
           Pour arriver à mon cabinet vous trouverez à proximité le tramway
           lignes T1 et T2 (arrêt cartoucherie), des bus (L2, 45 et 66).

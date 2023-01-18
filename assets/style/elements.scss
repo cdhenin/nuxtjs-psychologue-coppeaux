@@ -42,6 +42,7 @@ section {
 
     a {
       color: $light-color;
+
       &:hover,
       &:active {
         color: $primary-color-light;
@@ -119,4 +120,25 @@ section {
   max-width: 3rem;
   font-size: 3rem;
   color: $secondary-color-main;
+}
+
+.button.doctolib {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: $primary-color-dark;
+  &:hover {
+    font-weight: unset;
+  }
+}
+
+section {
+  &.dark {
+    .button.doctolib {
+      color: $light-color;
+      &:hover {
+        color: $secondary-color-dark;
+      }
+    }
+  }
 }
