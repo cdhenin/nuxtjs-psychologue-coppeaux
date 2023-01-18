@@ -13,7 +13,8 @@
       <NuxtLink to="/bilan-psychologique" class="button primary"
         >Bilan psychologique</NuxtLink
       >
-      <NuxtLink to="/contact" class="button">Prendre rendez-vous</NuxtLink>
+      <NuxtLink to="/tarifs" class="button">Tarifs</NuxtLink>
+      <NuxtLink to="/contact" class="button primary">Prendre rendez-vous</NuxtLink>
     </div>
   </div>
 </template>

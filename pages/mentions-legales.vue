@@ -4,9 +4,7 @@
       <h1>Mentions légales</h1>
       <h2>Identité</h2>
 
-      <p>
-        Nom du site web : Amélie Coppeaux - Psychologue clinicienne à Toulouse
-      </p>
+      <p>Nom du site web : Amélie Coppeaux - Psychologue clinicienne à Toulouse</p>
       <p>Adresse du site : https://claire.dhenin.net</p>
 
       <p>Propriétaire : Amélie Coppeaux</p>
@@ -17,10 +15,8 @@
 
       <p>Hébergement : OVH – 2 rue Kellermann - 59100 Roubaix - France</p>
       <p>
-        Développeuse du site et webmaster : Claire DHÉNIN (<a
-          href="https://claire.dhenin.net"
-          >https://claire.dhenin.net</a
-        >)
+        Développeuse du site et webmaster : Claire DHÉNIN (
+        <a href="https://claire.dhenin.net">https://claire.dhenin.net</a>)
       </p>
 
       <h3>Commerçant</h3>
@@ -127,26 +123,29 @@
           Image bilan psychologique :
           <a
             href="https://pixabay.com/fr/illustrations/th%c3%a9rapie-psychologue-salle-d-attente-7540959/"
-            >BiancaVanDijk</a
-          >
+          >BiancaVanDijk</a>
           &
           <a
             href="https://pixabay.com/fr/photos/femme-%c3%a9crivez-bloc-notes-fille-792162/"
-            >kaboompics</a
-          >
+          >kaboompics</a>
         </li>
         <li>
           Image page d'accueil :
           <a
             href="https://pixabay.com/fr/photos/main-l-%c3%a9criture-carnet-stylo-5816640/"
-            >RazorMax</a
-          >
+          >RazorMax</a>
+        </li>
+        <li>
+          Image page tarifs :
+          <a
+            href="https://pixabay.com/fr/photos/organisateur-calendrier-programme-791939/"
+          >kaboompics</a>
         </li>
         <li>
           Logo L'École de Psychologues Praticiens :
-          <a href="https://www.psycho-prat.fr/"
-            >L'École de Psychologues Praticiens</a
-          >
+          <a
+            href="https://www.psycho-prat.fr/"
+          >L'École de Psychologues Praticiens</a>
         </li>
         <li>
           Logo AFTCC :
@@ -155,7 +154,7 @@
         <!-- <li>
                     Logo Asadis :
                     <a href="https://asadis.net/fr/">Asadis</a>
-                </li>-->
+        </li>-->
       </ul>
 
       <p>
