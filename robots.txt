@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://cdhenin.github.io/coppeaux/sitemap.xml
