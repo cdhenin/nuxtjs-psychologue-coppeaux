@@ -7,6 +7,8 @@
           <h2>Psychologue&nbsp;clinicienne à Toulouse</h2>
           <h3>Enfants- Adolescents- Adultes</h3>
           <h3>Bilan intellectuel et cognitif (WISC 5)</h3>
+          <h3>Consultations au cabinet et en visio</h3>
+          <h3>Consultations à domicile (enfants et adolescents)</h3>
         </div>
         <div class="buttons">
           <NuxtLink
