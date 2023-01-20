@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /
-Sitemap: https://cdhenin.github.io/nuxtjs-psychologue-coppeaux/sitemap.xml
+Sitemap: https://amelie.coppeauxpsychologue.fr/sitemap.xml
