@@ -1,4 +1,4 @@
-const ROUTER_BASE = '/nuxtjs-psychologue-coppeaux/'
+const ROUTER_BASE = '/'
 const BASE_URL = `${process.env.HOSTNAME}${ROUTER_BASE}`
 
 export default {

@@ -5,7 +5,7 @@
       <h2>Identité</h2>
 
       <p>Nom du site web : Amélie Coppeaux - Psychologue clinicienne à Toulouse</p>
-      <p>Adresse du site : https://claire.dhenin.net</p>
+      <p>Adresse du site : https://amelie.coppeauxpsychologue.fr/</p>
 
       <p>Propriétaire : Amélie Coppeaux</p>
       <p>
@@ -13,11 +13,20 @@
         Toulouse
       </p>
 
-      <p>Hébergement : OVH – 2 rue Kellermann - 59100 Roubaix - France</p>
       <p>
         Développeuse du site et webmaster : Claire DHÉNIN (
-        <a href="https://claire.dhenin.net">https://claire.dhenin.net</a>)
+        <a
+          href="https://claire.dhenin.net"
+        >https://claire.dhenin.net</a>)
       </p>
+      <h4>Hébergement</h4>
+      <p>
+        <a href="https://pages.github.com/">GitHub Pages</a> (
+        <a
+          href="https://docs.github.com/fr/pages/getting-started-with-github-pages/about-github-pages#collecte-de-donn%C3%A9es"
+        >Collecte de données Github</a>)
+      </p>
+      <p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States</p>
 
       <h3>Commerçant</h3>
 

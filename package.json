@@ -1,12 +1,12 @@
 {
-  "name": "coppeaux",
+  "name": "amelie-coppeaux-psychologue",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "HOSTNAME=https://cdhenin.github.io nuxt generate",
+    "generate": "HOSTNAME=https://amelie.coppeauxpsychologue.fr nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
@@ -35,5 +35,9 @@
     "prettier": "^2.7.1",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1"
+  },
+  "resolutions": {
+    "nth-check": "^2.0.1",
+    "glob-parent": "^5.1.2"
   }
 }
