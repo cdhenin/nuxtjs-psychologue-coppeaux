@@ -37,10 +37,10 @@ export default {
       { name: 'og:image', content: `${BASE_URL}og-image.png` },
       { name: 'og:url', content: BASE_URL },
       { name: 'og:locale', content: 'fr_FR' },
-      { name: 'robots', content: 'noindex, nofollow' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` },
+      { rel: 'canonical', href: BASE_URL },
     ],
   },
 
@@ -107,7 +107,7 @@ export default {
 
   robots: {
     UserAgent: '*',
-    Disallow: '/',
+    Allow: '/',
     Sitemap: `${BASE_URL}sitemap.xml`,
   },
 

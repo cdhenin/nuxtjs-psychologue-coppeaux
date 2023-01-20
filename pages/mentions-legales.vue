@@ -14,15 +14,13 @@
       </p>
 
       <p>
-        Développeuse du site et webmaster : Claire DHÉNIN (
-        <a
-          href="https://claire.dhenin.net"
-        >https://claire.dhenin.net</a>)
+        Développeuse du site et webmaster : Claire DHÉNIN 
+        (<a href="https://claire.dhenin.net">https://claire.dhenin.net</a>)
       </p>
       <h4>Hébergement</h4>
       <p>
-        <a href="https://pages.github.com/">GitHub Pages</a> (
-        <a
+        <a href="https://pages.github.com/">GitHub Pages</a> 
+        (<a
           href="https://docs.github.com/fr/pages/getting-started-with-github-pages/about-github-pages#collecte-de-donn%C3%A9es"
         >Collecte de données Github</a>)
       </p>

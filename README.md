@@ -1,6 +1,9 @@
-# Site professionnel Amélie Coppeaux - Psychologue à Toulouse
+# Site professionnel 
+# Amélie Coppeaux - Psychologue à Toulouse
 
 Code source du site statique [amelie.coppeauxpsychologue.fr](https://amelie.coppeauxpsychologue.fr)
+
+Réalisé avec Nuxtjs
 
 ## Build Setup
 
@@ -17,6 +20,9 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+
+# deploy dist on github pages
+$ git subtree push --prefix dist origin gh-pages
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
