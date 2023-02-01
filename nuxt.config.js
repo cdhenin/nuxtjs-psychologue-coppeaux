@@ -40,7 +40,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` },
-      { rel: 'canonical', href: BASE_URL },
     ],
   },
 
