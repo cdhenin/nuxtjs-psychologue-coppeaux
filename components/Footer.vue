@@ -28,11 +28,6 @@ footer {
     color: $secondary-color-main;
     text-decoration: none;
     @include text-bold;
-
-    &:hover,
-    &:active {
-      color: $secondary-color-dark;
-    }
   }
 }
 
