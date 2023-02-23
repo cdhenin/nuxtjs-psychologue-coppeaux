@@ -37,6 +37,7 @@ export default {
       { name: 'og:image', content: `${BASE_URL}og-image.png` },
       { name: 'og:url', content: BASE_URL },
       { name: 'og:locale', content: 'fr_FR' },
+      { "http-equiv": "Content-Security-Policy", content:"default-src 'self'; script-src 'self' https://maps.gstatic.com; frame-src https://www.google.com" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` },
@@ -111,4 +112,7 @@ export default {
   },
 
   generate: { fallback: true },
+  build: {
+    extractCSS: true
+  }
 }

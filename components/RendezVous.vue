@@ -34,12 +34,12 @@
           :icon="['fas', 'envelope']"
           class="icon"
         />
-        <div style="display: flex; flex-direction: column">
+        <div class="email">
           <span>ameliecoppeaux.psychologue</span>
 
-          <span style="display: flex; justify-content: center">
+          <span class="at">
             <font-awesome-icon
-              style="max-width: 1.2rem"
+              class="at-icon"
               aria-label="@"
               aria-hidden="false"
               alt="@"
@@ -76,3 +76,20 @@ export default {
   name: 'RendezVous',
 }
 </script>
+
+
+<style lang="scss" scoped>
+.email {
+  display: flex; 
+  flex-direction: column
+}
+
+.at {
+  display: flex;
+  justify-content: center;
+  .at-icon {
+    max-width: 1.2rem;
+  }
+}
+
+</style>
