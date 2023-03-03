@@ -7,6 +7,8 @@ Réalisé avec Nuxtjs
 
 ## Build Setup
 
+- Node version 16.19.1
+
 ```bash
 # install dependencies
 $ yarn install
