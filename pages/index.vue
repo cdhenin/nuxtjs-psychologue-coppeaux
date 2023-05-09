@@ -22,21 +22,16 @@
     </section>
     <RendezVous />
 
-    <iframe
-      class="full-width flex-grow-vertical"
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11556.28201681057!2d1.4101201!3d43.6050736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f83287ad066bfe0!2sAm%C3%A9lie%20COPPEAUX-%20Psychologue!5e0!3m2!1sfr!2sfr!4v1671038760519!5m2!1sfr!2sfr"
-      allowfullscreen
-      loading="lazy"
-      height="200"
-      aria-label="google map widget avec adresse du cabinet"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <MapsIframe />
   </div>
 </template>
 
 <script>
+import MapsIframe from '~/components/MapsIframe.vue'
+
 export default {
   name: 'IndexPage',
+  components: { MapsIframe },
   head() {
     return {
       title: 'Amélie Coppeaux Psychologue clinicienne à Toulouse',

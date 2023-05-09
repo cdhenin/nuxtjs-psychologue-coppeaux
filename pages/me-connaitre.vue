@@ -5,10 +5,13 @@
         <h1>Qui suis-je ?</h1>
         <hr class="divider" />
         <div class="presentation">
-          <img
+          <nuxt-img
+            format="webp"
             alt="portrait amélie coppeaux psychologue"
-            width="200"
-            src="~/assets/img/amélie.jpg"
+            width="400"
+            height="648"
+            src="/img/amélie.jpg"
+            sizes="sm:200px md:400px lg:500px"
           />
           <div>
             <p>
@@ -32,10 +35,12 @@
         <hr class="divider" />
         <div class="formations">
           <div class="formation">
-            <img
+            <nuxt-img
+              format="webp"
               alt="logo école Psychologues Praticiens Paris"
-              src="~/assets/img/logo_EPP.png"
+              src="/img/logo_EPP.png"
               height="75"
+              width="166"
             />
             <p>
               Diplômée de
@@ -49,9 +54,9 @@
           </div>
 
           <!-- <div class="formation">
-            <img
+            <nuxt-img format="webp"
               alt="Logo AFTCC - Formation pratique aux TCC"
-              src="~/assets/img/logo_AFTCC.png"
+              src="~/img/logo_AFTCC.png"
               height="75"
             />
             <p>
@@ -64,10 +69,12 @@
             </p>
           </div> -->
           <div class="formation">
-            <img
+            <nuxt-img
+              format="webp"
               alt="Logo Asadis"
-              src="~/assets/img/logo_asadis.png"
+              src="/img/logo_asadis.png"
               height="50"
+              width="176"
             />
             <p>
               Certification de formation Méthodologie avancée d’analyse et
@@ -109,7 +116,10 @@ export default {
   > img {
     border: 2px solid;
     border-radius: 5%;
+    width: 200px;
+    height: auto;
   }
+
   > p {
     padding: 2rem;
   }
@@ -156,11 +166,13 @@ export default {
     }
   }
 }
+
 @media (max-width: 1024px) {
   .formations {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 768px) {
   .formations {
     flex-direction: column;

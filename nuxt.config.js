@@ -37,10 +37,10 @@ export default {
       { name: 'og:image', content: `${BASE_URL}og-image.png` },
       { name: 'og:url', content: BASE_URL },
       { name: 'og:locale', content: 'fr_FR' },
-      { "http-equiv": "Content-Security-Policy", content:"default-src 'self'; script-src 'self' https://maps.gstatic.com; frame-src https://www.google.com" }
+      { "http-equiv": "Content-Security-Policy", content: "default-src 'self'; script-src 'self' https://maps.gstatic.com 'sha256-yX/iyX7D+2AX+qF0YUk4EXLqu5fIbl/NS5QXjj9BX4M='; frame-src https://www.google.com" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico` },
+      { rel: 'icon', type: 'image/x-icon', href: `${ROUTER_BASE}favicon.ico`, sizes: "48x48" },
     ],
   },
 
@@ -57,6 +57,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/fontawesome',
+    '@nuxt/image',
   ],
 
   fontawesome: {
@@ -76,12 +77,14 @@ export default {
         'faUsers',
         'faUserGraduate',
         'faChildReaching',
+        "faMapLocationDot",
+        "faArrowUpRightFromSquare"
       ],
     },
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/robots', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxt/image'],
 
   styleResources: {
     // Order is important before variables and mixins are used in the others files and should be loaded first
@@ -114,5 +117,8 @@ export default {
   generate: { fallback: true },
   build: {
     extractCSS: true
-  }
+  },
+  image: {
+    provider: 'static',
+  },
 }

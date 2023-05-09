@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "HOSTNAME=https://amelie.coppeauxpsychologue.fr nuxt generate",
+    "generate": "HOSTNAME=https://amelie.coppeauxpsychologue.fr nuxt generate --modern=client",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@nuxt/image": "^0.7.1",
     "@nuxtjs/eslint-config": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/fontawesome": "^1.1.2",

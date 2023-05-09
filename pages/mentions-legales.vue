@@ -4,7 +4,9 @@
       <h1>Mentions légales</h1>
       <h2>Identité</h2>
 
-      <p>Nom du site web : Amélie Coppeaux - Psychologue clinicienne à Toulouse</p>
+      <p>
+        Nom du site web : Amélie Coppeaux - Psychologue clinicienne à Toulouse
+      </p>
       <p>Adresse du site : https://amelie.coppeauxpsychologue.fr/</p>
 
       <p>Propriétaire : Amélie Coppeaux</p>
@@ -14,17 +16,25 @@
       </p>
 
       <p>
-        Développeuse du site et webmaster : Claire DHÉNIN 
-        (<a href="https://claire.dhenin.net">https://claire.dhenin.net</a>)
+        Développeuse du site et webmaster : Claire DHÉNIN (
+        <ExternalLink
+          href="https://claire.dhenin.net"
+          content="https://claire.dhenin.net"
+        />)
       </p>
       <h4>Hébergement</h4>
       <p>
-        <a href="https://pages.github.com/">GitHub Pages</a> 
-        (<a
+        <ExternalLink href="https://pages.github.com/" content="GitHub Pages" />
+        (
+        <ExternalLink
           href="https://docs.github.com/fr/pages/getting-started-with-github-pages/about-github-pages#collecte-de-donn%C3%A9es"
-        >Collecte de données Github</a>)
+          content="Collecte de données Github"
+        />)
       </p>
-      <p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States</p>
+      <p>
+        GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107,
+        United States
+      </p>
 
       <h3>Commerçant</h3>
 
@@ -114,68 +124,101 @@
       <h3>Confidentialité</h3>
 
       <p>
-        Le site ne recueille pas d’informations personnelles, et n’est pas
-        assujetti à déclaration à la CNIL.
+        Le site intègre une iframe Google maps susceptible de recueillir des
+        données personnelles via les cookies. Nous n’affichons pas cette iframe
+        sans le consentement explicite de l’utilisateur ou l’utilisatrice.
+        <ExternalLink
+          href="https://policies.google.com/privacy?hl=fr"
+          content="Voir la politique de Confidentialité de Google"
+        />
+        et
+        <ExternalLink
+          href="https://www.google.com/intl/fr_US/help/terms_maps/"
+          content="voir les
+                conditions d’utilisation de Google
+                maps."
+        />
+      </p>
+
+      <p>
+        En dehors de l’intégration google maps, le site ne recueille pas
+        d’informations personnelles et n’est pas assujetti à déclaration à la
+        CNIL.
       </p>
 
       <h3>Crédits</h3>
 
       <p>
         Icônes :
-        <a href="https://fontawesome.com/">Font awesome</a>
+        <ExternalLink href="https://fontawesome.com/" content="Font awesome" />
       </p>
       <p>Images :</p>
       <ul>
         <li>
           Image bilan psychologique :
-          <a
+          <ExternalLink
             href="https://pixabay.com/fr/illustrations/th%c3%a9rapie-psychologue-salle-d-attente-7540959/"
-          >BiancaVanDijk</a>
+            content="BiancaVanDijk"
+          />
           &
-          <a
+          <ExternalLink
             href="https://pixabay.com/fr/photos/femme-%c3%a9crivez-bloc-notes-fille-792162/"
-          >kaboompics</a>
+            content="kaboompics"
+          />
         </li>
         <li>
           Image page d'accueil :
-          <a
+          <ExternalLink
             href="https://pixabay.com/fr/photos/main-l-%c3%a9criture-carnet-stylo-5816640/"
-          >RazorMax</a>
+            content="RazorMax"
+          />
         </li>
         <li>
           Image page tarifs :
-          <a
+          <ExternalLink
             href="https://pixabay.com/fr/photos/organisateur-calendrier-programme-791939/"
-          >kaboompics</a>
+            content="kaboompics"
+          />
         </li>
         <li>
           Logo L'École de Psychologues Praticiens :
-          <a
+          <ExternalLink
             href="https://www.psycho-prat.fr/"
-          >L'École de Psychologues Praticiens</a>
+            content="L'École de Psychologues Praticiens"
+          />
         </li>
         <li>
           Logo AFTCC :
-          <a href="https://www.aftcc.org/">AFTCC</a>
+          <ExternalLink href="https://www.aftcc.org/" content="AFTCC" />
         </li>
         <!-- <li>
                     Logo Asadis :
-                    <a href="https://asadis.net/fr/">Asadis</a>
+                    <ExternalLink href="https://asadis.net/fr/">Asadis</a>
         </li>-->
       </ul>
 
       <p>
         Polices d'écritures:
-        <a href="https://fontesk.com/playen-sans-typeface/">Playen Sans</a> &
-        <a href="https://fontesk.com/teresa-font/">Teresa</a>
+        <ExternalLink
+          href="https://fontesk.com/playen-sans-typeface/"
+          content="Playen Sans"
+        />
+        &
+        <ExternalLink
+          href="https://fontesk.com/teresa-font/"
+          content="Teresa"
+        />
       </p>
     </div>
   </section>
 </template>
 
 <script>
+import ExternalLink from '~/components/ExternalLink.vue'
+
 export default {
   name: 'MentionsLegalesPage',
+  components: { ExternalLink },
   head() {
     return {
       title:

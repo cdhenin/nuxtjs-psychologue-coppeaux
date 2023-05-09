@@ -57,12 +57,13 @@
           rel="noopener noreferrer"
         >
           Prendre rendez-vous
-          <img
-            src="~/assets/img/logo_doctolib.svg"
+          <nuxt-img
+            src="/img/logo_doctolib.svg"
             aria-hidden="false"
             aria-label="logo Doctolib"
             role="text"
             height="28"
+            width="94"
             alt="logo doctolib"
           />
         </a>
@@ -77,11 +78,10 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
 .email {
-  display: flex; 
-  flex-direction: column
+  display: flex;
+  flex-direction: column;
 }
 
 .at {
@@ -91,5 +91,4 @@ export default {
     max-width: 1.2rem;
   }
 }
-
 </style>

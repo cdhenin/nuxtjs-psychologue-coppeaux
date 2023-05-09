@@ -1,9 +1,12 @@
 <template>
   <div class="flex-grow-vertical">
-    <img
+    <nuxt-img
       class="cover"
       alt="illustration tarifs"
-      src="~/assets/img/organizer.jpg"
+      src="/img/organizer.jpg"
+      height="1280"
+      width="1920"
+      sizes="sm:400px md:600px lg:800px xl:1200px"
     />
     <section id="tarifs" class="section">
       <div class="content container">

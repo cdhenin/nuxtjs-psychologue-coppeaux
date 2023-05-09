@@ -1,7 +1,18 @@
 <template>
   <div class="flex-grow-vertical">
     <section id="pratique" class="section">
-      <img alt="illustration pratique" src="~/assets/img/pratique.jpg" />
+      <div class="image-container">
+        <nuxt-img
+          format="webp"
+          alt="illustration pratique"
+          src="/img/pratique.jpg"
+          sizes="sm:400px md:600px lg:800px xl:1000px"
+          loading="lazy"
+          width="1920"
+          height="1403"
+          quality="75"
+        />
+      </div>
       <div class="content">
         <div>
           <h1>Comment je travaille</h1>
@@ -29,7 +40,19 @@
       </div>
     </section>
     <section id="tarifs" class="section dark">
-      <img alt="illustration tarifs" src="~/assets/img/notes.jpg" />
+      <div class="image-container">
+        <nuxt-img
+          format="webp"
+          alt="illustration tarifs"
+          src="/img/notes.jpg"
+          loading="lazy"
+          width="1920"
+          height="1280"
+          sizes="sm:400px md:600px lg:800px xl:1000px"
+          quality="75"
+        />
+      </div>
+
       <div class="content">
         <div>
           <h1>Informations et tarifs</h1>
@@ -82,10 +105,18 @@ export default {
 .section {
   display: flex;
   padding: 0;
-  > img,
+
+  > .image-container,
   > .content {
     width: 50%;
-    object-fit: cover;
+  }
+
+  > .image-container {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &#tarifs {
@@ -116,7 +147,8 @@ export default {
   .section,
   .section#tarifs {
     flex-direction: column;
-    > img,
+
+    > .image-container,
     > .content {
       width: 100%;
     }
