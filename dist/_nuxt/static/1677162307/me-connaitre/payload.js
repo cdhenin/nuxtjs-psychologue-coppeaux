@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/me-connaitre", {data:[{}],fetch:{},mutations:void 0});
