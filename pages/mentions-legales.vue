@@ -39,8 +39,7 @@
       <h3>Commerçant</h3>
 
       <p>
-        06.87.89.92.17 – ameliecoppeaux.psychologue@gmail.com – 3 Rue
-        Ledru-Rollin - 31300 Toulouse
+        06.87.89.92.17 – ameliecoppeaux.psychologue@gmail.com – Centre commercial du clos de l'hers 31790 Saint-Jory
       </p>
 
       <p>Nº ADELI : 319337218</p>

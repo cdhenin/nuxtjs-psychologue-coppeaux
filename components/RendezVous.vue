@@ -10,8 +10,8 @@
           class="icon"
         />
         <div>
-          <p>3 Rue Ledru-Rollin</p>
-          <p>31300 Toulouse</p>
+          <p>Centre commercial <br />du Clos de l'Hers</p>
+          <p>31790 Saint-Jory</p>
         </div>
       </div>
       <div class="flex-row-space-around-item">
