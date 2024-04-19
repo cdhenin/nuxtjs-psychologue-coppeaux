@@ -20,6 +20,7 @@
           <div class="flex-row-space-around-item">
             <font-awesome-icon
               aria-hidden="false"
+              aria-level="2"
               aria-label="Adresse du cabinet"
               role="heading"
               :icon="['fas', 'location-dot']"
@@ -34,6 +35,7 @@
             <font-awesome-icon
               aria-hidden="false"
               aria-label="Téléphone"
+              aria-level="2"
               role="heading"
               :icon="['fas', 'phone']"
               class="icon"
@@ -50,6 +52,7 @@
             <font-awesome-icon
               aria-hidden="false"
               aria-label="Adresse email"
+              aria-level="2"
               role="heading"
               :icon="['fas', 'envelope']"
               class="icon"
@@ -72,6 +75,7 @@
           <div class="flex-row-space-around-item">
             <font-awesome-icon
               aria-hidden="false"
+              aria-level="2"
               aria-label="Rendez-vous doctolib"
               role="heading"
               :icon="['fas', 'calendar-check']"
@@ -86,7 +90,7 @@
               Prendre rendez-vous
               <nuxt-img
                 src="/img/logo_doctolib.svg"
-                aria-hidden="false"
+                aria-hidden="true"
                 aria-label="logo Doctolib"
                 role="text"
                 height="28"
