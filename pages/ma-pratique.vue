@@ -1,5 +1,8 @@
 <template>
   <div class="flex-grow-vertical">
+    <Head>
+      <Title>Ma pratique - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <section id="pratique" class="section">
       <div class="image-container">
         <nuxt-img
@@ -93,11 +96,6 @@
 <script>
 export default {
   name: 'MaPratiquePage',
-  head() {
-    return {
-      title: 'Ma pratique - Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 

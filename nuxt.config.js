@@ -1,7 +1,7 @@
 const ROUTER_BASE = '/'
 const BASE_URL = `${process.env.HOSTNAME}${ROUTER_BASE}`
 
-export default {
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -9,7 +9,7 @@ export default {
     base: ROUTER_BASE,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
+  meta: {
     title: 'Amélie Coppeaux - Psychologue clinicienne à Toulouse',
     htmlAttrs: {
       lang: 'fr',
@@ -18,7 +18,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
         name: 'description',
         content:
           "Diplômée de l’école de Psychologues Praticiens de Paris, je vous reçois dans mon cabinet pour des prises en charge d'enfants, d’adolescents et d’adultes. Formée à la passation de bilans lors de mes études, puis psychologue de l’Education Nationale, je propose également les bilans cognitifs et intellectuels pour les enfants de 6 à 16 ans (WISC-V).",
@@ -48,9 +47,6 @@ export default {
   css: ['~assets/style/fonts.css'],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -121,4 +117,4 @@ export default {
   image: {
     provider: 'static',
   },
-}
+})

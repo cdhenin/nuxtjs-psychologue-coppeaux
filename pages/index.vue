@@ -1,5 +1,8 @@
 <template>
   <div class="wrapper">
+    <Head>
+      <Title>Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <section id="home">
       <div class="card">
         <h1>Amélie COPPEAUX</h1>
@@ -32,11 +35,6 @@ import MapsIframe from '~/components/MapsIframe.vue'
 export default {
   name: 'IndexPage',
   components: { MapsIframe },
-  head() {
-    return {
-      title: 'Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 

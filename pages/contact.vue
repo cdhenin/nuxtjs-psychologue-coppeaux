@@ -1,5 +1,8 @@
 <template>
   <div class="flex-grow-vertical">
+    <Head>
+      <Title>Contact - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <div class="cabinet-wrapper">
       <div class="cabinet-layer"></div>
       <nuxt-img
@@ -118,11 +121,6 @@ import MapsIframe from '~/components/MapsIframe.vue'
 export default {
   name: 'ContactPage',
   components: { MapsIframe },
-  head() {
-    return {
-      title: 'Contact- Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 

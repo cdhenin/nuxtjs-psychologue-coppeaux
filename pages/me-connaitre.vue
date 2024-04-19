@@ -1,5 +1,8 @@
 <template>
   <div class="flex-grow-vertical">
+    <Head>
+      <Title>Me connaître - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <section id="about" class="flex-grow-vertical">
       <div class="container mx-auto">
         <h1>Qui suis-je ?</h1>
@@ -96,12 +99,6 @@
 <script>
 export default {
   name: 'MeConnaitrePage',
-  head() {
-    return {
-      title:
-        'Me connaître - Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 

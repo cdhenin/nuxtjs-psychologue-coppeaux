@@ -1,5 +1,8 @@
 <template>
   <section id="mentionslegales">
+    <Head>
+      <Title>Mentions légales - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <div class="container">
       <h1>Mentions légales</h1>
       <h2>Identité</h2>
@@ -218,11 +221,5 @@ import ExternalLink from '~/components/ExternalLink.vue'
 export default {
   name: 'MentionsLegalesPage',
   components: { ExternalLink },
-  head() {
-    return {
-      title:
-        'Mentions légales - Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>

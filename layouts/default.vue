@@ -1,7 +1,7 @@
 <template>
   <main @click="closeMobileMenu">
     <NavBar />
-    <Nuxt />
+    <slot />
     <Footer />
   </main>
 </template>

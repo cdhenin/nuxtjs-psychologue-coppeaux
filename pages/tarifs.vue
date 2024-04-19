@@ -1,5 +1,8 @@
 <template>
   <div class="flex-grow-vertical">
+    <Head>
+      <Title>Tarifs - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <nuxt-img
       class="cover"
       alt="illustration tarifs"
@@ -92,11 +95,6 @@ import RendezVous from '~/components/RendezVous.vue'
 export default {
   name: 'TarifsPage',
   components: { RendezVous },
-  head() {
-    return {
-      title: 'Tarifs - Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 

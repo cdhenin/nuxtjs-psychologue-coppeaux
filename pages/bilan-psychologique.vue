@@ -1,5 +1,8 @@
 <template>
   <div class="flex-grow-vertical">
+    <Head>
+      <Title>Bilan psychologique - Amélie Coppeaux Psychologue clinicienne à Toulouse</Title>
+    </Head>
     <section id="bilan" class="flex-grow-vertical">
       <div class="container">
         <h1>Le bilan intellectuel et cognitif WISC-V</h1>
@@ -93,12 +96,6 @@
 <script>
 export default {
   name: 'BilanPsychologiquePage',
-  head() {
-    return {
-      title:
-        'Bilan psychologique - Amélie Coppeaux Psychologue clinicienne à Toulouse',
-    }
-  },
 }
 </script>
 
