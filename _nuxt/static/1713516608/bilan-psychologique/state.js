@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1713516608",layout:"default",error:a,serverRendered:true,routePath:"\u002Fbilan-psychologique",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}},_img:{"/_ipx/s_94x28/img/logo_doctolib.svg":"\u002F_nuxt\u002Fimage\u002Ffccd4e.svg"}}}(null));
