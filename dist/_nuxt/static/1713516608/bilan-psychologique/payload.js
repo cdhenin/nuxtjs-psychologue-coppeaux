@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/bilan-psychologique", {data:[{_img:{"/_ipx/s_94x28/img/logo_doctolib.svg":"\u002F_nuxt\u002Fimage\u002Ffccd4e.svg"}}],fetch:{},mutations:void 0});

@@ -1,0 +1,21 @@
+---
+export interface Props extends astroHTML.JSX.SVGAttributes  {
+  icon: any
+  class?: string
+  size?: string;
+}
+
+const { icon, class: className = '', size = '1em' , ...props } = Astro.props
+const [width, height, , , svgPath] = icon.icon
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox={`0 0 ${width} ${height}`}
+  fill="currentColor"
+  {...props}
+>
+  <path d={svgPath}></path>
+</svg>

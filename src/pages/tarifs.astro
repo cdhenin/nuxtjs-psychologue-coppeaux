@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro'
+import RendezVous from '../components/RendezVous.astro'
+---
+
+<Layout title="Tarifs - Amélie Coppeaux Psychologue clinicienne à Saint-Jory">
+  <div class="flex-grow-vertical">
+    <section id="tarifs" class="section">
+      <div class="content container">
+        <div>
+          <h1>Tarifs</h1>
+          <hr class="divider" />
+        </div>
+
+        <div class="description">
+          <div class="item">
+            <h2>Consultations</h2>
+            <p>Adultes: 1 heure - 60 €</p>
+          </div>
+          <div class="item">
+            <h2>Modalités de Paiements</h2>
+            <p>
+              Le paiement s'effectue à chaque séance en carte bancaire , virement bancaire, espèces ou par paiement
+              mobile avec Wero.
+            </p>
+          </div>
+          <div class="item">
+            <h2>Remboursement des consultations</h2>
+            <p>
+              Les séances ne sont pas remboursées par la sécurité sociale.
+              Néanmoins, certaines mutuelles proposent une prise en charge
+              partielle des frais engagés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <RendezVous />
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+    @use '../assets/style/variables.scss' as *;
+
+  .cover {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .item {
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-left: 2px dashed $secondary-color-main;
+  }
+</style>

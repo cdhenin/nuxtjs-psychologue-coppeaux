@@ -1,48 +1,25 @@
 {
-  "name": "amelie-coppeaux-psychologue",
-  "version": "1.0.0",
-  "private": true,
+  "name": "coppeaux-psychologue",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "HOSTNAME=https://amelie.coppeauxpsychologue.fr nuxt generate --modern=client",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:prettier": "prettier --check .",
-    "lint": "yarn lint:js && yarn lint:prettier",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "@astrojs/sitemap": "^3.7.0",
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "astro": "^5.17.2",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@nuxt/image": "^0.7.1",
-    "@nuxtjs/eslint-config": "^11.0.0",
-    "@nuxtjs/eslint-module": "^3.1.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/robots": "^2.5.0",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "@nuxtjs/style-resources": "^1.2.1",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-vue": "^9.5.1",
-    "prettier": "^2.7.1",
-    "sass": "^1.57.1",
-    "sass-loader": "^10.4.1"
-  },
-  "resolutions": {
-    "nth-check": "^2.0.1",
-    "glob-parent": "^5.1.2",
-    "ua-parser-js": "^0.7.33",
-    "postcss": "^8.4.31",
-    "sharp": "^0.32.6",
-    "lodash": "^4.17.21"
+    "sass": "^1.97.3",
+    "sass-embedded": "^1.97.3",
+    "stylelint": "^17.3.0",
+    "stylelint-config-recommended-scss": "^17.0.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

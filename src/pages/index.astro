@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro'
+import MapsIframe from '../components/MapsIframe.astro'
+import RendezVous from '../components/RendezVous.astro'
+---
+
+<Layout title="Amélie Coppeaux Psychologue clinicienne à Saint-Jory">
+  <div class="wrapper">
+    <section id="home">
+      <div class="card">
+        <h1>Amélie COPPEAUX</h1>
+        <div class="subtitles">
+          <h2>Psychologue&nbsp;clinicienne à Saint-Jory</h2>
+          <span>Adultes</span> - <span>EMDR</span> - 
+          <span>Consultations au cabinet et en visio</span>
+          
+        </div>
+        <div class="buttons">
+          <a
+            aria-label="Visiter la page contact"
+            href="/contact"
+            class="button primary">Prendre rendez-vous</a
+          >
+        </div>
+      </div>
+    </section>
+    <RendezVous />
+
+    <MapsIframe />
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+  @use '../assets/style/variables.scss' as *;
+  .wrapper {
+    position: relative;
+  }
+
+  #home {
+    background-size: cover;
+    background-position: right 45% bottom 45%;
+    height: calc(100vh - $navbar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s;
+    background-image: url('../assets/img/home.jpg');
+
+    &::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - $navbar-height);
+    }
+
+    > .card {
+      z-index: 1;
+      padding: $spacing-5;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $light-color;
+      border: 3px solid $secondary-color-main;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .subtitles {
+        font-weight: 600;
+        color: $primary-color-main;
+        padding-bottom: 1rem;
+
+        h2 {
+          margin: 0.5rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      > .card {
+        padding: $spacing-3;
+        h1 {
+          font-size: 2rem;
+        }
+        .subtitles {
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
+
+        .button {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,25 @@
+---
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import Icon from './Icon.astro'
+
+const { content, href } = Astro.props
+---
+
+<a class="external" href={href} target="_blank" rel="noopener noreferrer">
+  <Icon
+    icon={faArrowUpRightFromSquare}
+    aria-hidden="true"
+    class="icon"
+    size="1rem"
+  />
+  {content}
+</a>
+
+<style lang="scss" scoped>
+  a.external {
+    .icon {
+      font-size: 1rem;
+      width: 1rem;
+    }
+  }
+</style>

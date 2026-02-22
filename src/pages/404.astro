@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+interface Props {
+  error: unknown
+}
+
+const { error } = Astro.props
+---
+
+<Layout title="Page non trouvée - Amélie Coppeaux psychologue à Saint-Jory">
+  <div class="flex-grow-vertical wrapper">
+    <font-awesome-icon :icon="['fas', 'face-frown']" class="icon"
+    ></font-awesome-icon>
+    <h1>Erreur 404</h1>
+    <p>Cette page n'existe pas</p>
+
+    <div class="buttons">
+      <a href="/" class="button">Accueil</a>
+      <a href="/me-connaitre" class="button primary">Me connaître</a>
+      <a href="/ma-pratique" class="button">Ma pratique</a>
+      <a href="/tarifs" class="button">Tarifs</a>
+      <a href="/contact" class="button primary">Prendre rendez-vous</a>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+  }
+</style>

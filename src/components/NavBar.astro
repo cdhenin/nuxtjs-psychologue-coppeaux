@@ -1,0 +1,186 @@
+---
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Icon from './Icon.astro'
+
+const { pathname } = Astro.url
+---
+
+<nav>
+  <button
+    aria-label="Afficher Menu"
+    class="mobile-menu-button"
+    id="toggle-menu-button"
+  >
+    <Icon icon={faBars} class="icon" size="20px" />
+  </button>
+
+  <a href="/" class="navbar-link">
+    <h1 class="navbar-title">Amélie COPPEAUX</h1>
+    <h2 class="navbar-subtitle">Psychologue Saint-Jory</h2>
+  </a>
+  <ul>
+    <li>
+      <a
+        href="/me-connaitre"
+        class:list={pathname.replaceAll('/', '') === 'me-connaitre'
+          ? 'active'
+          : ''}>Me connaître</a
+      >
+    </li>
+    <li>
+      <a
+        href="/ma-pratique"
+        class:list={pathname.replaceAll('/', '') === 'ma-pratique'
+          ? 'active'
+          : ''}>Ma pratique</a
+      >
+    </li>
+    <li>
+      <a
+        href="/tarifs"
+        class:list={pathname.replaceAll('/', '') === 'tarifs' ? 'active' : ''}
+        >Tarifs</a
+      >
+    </li>
+    <li>
+      <a
+        href="/contact"
+        class:list={pathname.replaceAll('/', '') === 'contact' ? 'active' : ''}
+        >Contact</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<script>
+  document
+    .getElementById('toggle-menu-button')
+    ?.addEventListener('click', (event: Event) => {
+      event.stopPropagation()
+      event.preventDefault()
+      document.querySelector('nav > ul')?.classList.toggle('visible')
+    })
+</script>
+
+<style lang="scss" scoped>
+  @use '../assets/style/variables.scss' as *;
+  @use '../assets/style/mixins.scss' as *;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $primary-color-dark;
+    color: $secondary-color-main;
+    z-index: 2;
+    min-height: $navbar-height;
+    transition: all 1s ease;
+
+    .mobile-menu-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &.scroll {
+      opacity: 1;
+      min-height: 53px;
+    }
+
+    .navbar-link {
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        color: $secondary-color-main;
+      }
+
+      .navbar-subtitle {
+        margin: 0;
+        font-size: 1.2rem;
+        font-family:
+          teresatitle, GillSansRegular, 'Gill Sans MT', 'Gill Sans', Calibri,
+          'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+
+    > ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      min-height: $navbar-height;
+
+      li {
+        transition: all 0.5s ease-in-out;
+        display: flex;
+
+        &:hover {
+          background-color: $primary-color-main;
+          color: $secondary-color-main;
+
+          > a {
+            color: $primary-color-light;
+          }
+        }
+
+        a {
+          padding: $spacing-3;
+          width: 100%;
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          color: $secondary-color-main;
+          transition: all 1s ease-out;
+          font-size: 1.2rem;
+          &.active {
+            background-color: $primary-color-main;
+            color: $primary-color-light;
+            @include text-bold;
+          }
+        }
+      }
+    }
+    .mobile-menu-button {
+      display: none;
+      padding: $spacing-3;
+
+      .icon {
+        width: 1.2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 918px) {
+    nav,
+    nav.scroll {
+      justify-content: flex-start;
+      height: auto;
+
+      .navbar-title {
+        font-size: 1.2rem;
+      }
+      .navbar-subtitle {
+        font-size: 1rem;
+      }
+
+      .mobile-menu-button {
+        display: inline-flex;
+      }
+
+      > ul {
+        display: none;
+        width: 100%;
+        &.visible {
+          display: block;
+        }
+      }
+    }
+  }
+</style>

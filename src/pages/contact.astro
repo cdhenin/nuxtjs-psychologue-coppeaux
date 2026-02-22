@@ -1,0 +1,188 @@
+---
+import { Image } from 'astro:assets'
+import MapsIframe from '../components/MapsIframe.astro'
+import Layout from '../layouts/Layout.astro'
+import cabinetImage from '../assets/img/cabinet.jpg'
+import doctolibSvg from '../assets/img/logo_doctolib.svg'
+import Icon from '../components/Icon.astro'
+import {
+  faAt,
+  faCalendarCheck,
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons'
+
+import { getImage } from 'astro:assets'
+import cabinetImg from '../assets/img/cabinet.jpg'
+
+const cabinet = await getImage({ src: cabinetImg, format: 'webp', quality: 80 })
+---
+
+<Layout title="Contact- Amélie Coppeaux Psychologue clinicienne à Saint-Jory">
+  <div class="flex-grow-vertical">
+    <!-- <div class="cabinet-wrapper" style={`background-image: url(${cabinet.src})`}>
+      <div class="cabinet-layer"></div>
+      <Image
+        format="webp"
+        sizes="sm:400px md:600px lg:800px xl:1000px"
+        height="485"
+        width="1024"
+        class="full-width cabinet"
+        alt="photo du cabinet rue Ledru-Rollin"
+        src={cabinetImage}
+      />
+    </div> -->
+    <section id="contact" class="flex-grow-vertical">
+      <h1>Contact & accès</h1>
+      <hr class="divider" />
+      <div class="container">
+        <div class="flex-row-space-around grid-2">
+          <div class="flex-row-space-around-item">
+            <Icon
+              icon={faLocationDot}
+              aria-hidden="false"
+              aria-level="2"
+              aria-label="Adresse du cabinet"
+              role="heading"
+              class="icon"
+            />
+            <div>
+              <p>Centre commercial <br />du Clos de l'Hers</p>
+              <p>31790 Saint-Jory</p>
+            </div>
+          </div>
+          <div class="flex-row-space-around-item">
+            <Icon
+              icon={faPhone}
+              aria-hidden="false"
+              aria-label="Téléphone"
+              aria-level="2"
+              role="heading"
+              class="icon"
+            />
+            <a
+              class="text"
+              href="tel:0687899217"
+              target="_blank"
+              rel="noopener noreferrer">06.87.89.92.17</a
+            >
+          </div>
+          <div class="flex-row-space-around-item">
+            <Icon
+              icon={faEnvelope}
+              aria-hidden="false"
+              aria-label="Adresse email"
+              aria-level="2"
+              role="heading"
+              :icon="['fas', 'envelope']"
+              class="icon"
+            />
+            <div class="email">
+              <span>ameliecoppeaux.psychologue</span>
+
+              <span class="at">
+                <Icon
+                  class="at-icon"
+                  icon={faAt}
+                  aria-label="@"
+                  aria-hidden="false"
+                  :icon="['fas', 'at']"
+                  class="at-icon"
+                />gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div class="flex-row-space-around-item">
+            <Icon
+              aria-hidden="false"
+              aria-level="2"
+              aria-label="Rendez-vous doctolib"
+              role="heading"
+              icon={faCalendarCheck}
+              class="icon"
+            />
+            <a
+              class="button doctolib"
+              href="https://www.doctolib.fr/psychologue/toulouse/amelie-coppeaux"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Prendre rendez-vous
+              <Image
+                src={doctolibSvg}
+                aria-hidden="true"
+                aria-label="logo Doctolib"
+                role="textbox"
+                height="28"
+                width="94"
+                alt="logo doctolib"
+              />
+            </a>
+          </div>
+        </div>
+
+        <p>
+          Il est également possible de venir en voiture (stationnement gratuit
+          autour du cabinet).
+        </p>
+      </div>
+    </section>
+
+    <MapsIframe />
+  </div>
+</Layout>
+
+<style lang="scss" scoped>
+  @use '../assets/style/variables.scss' as *;
+  $picture-height: 200px;
+
+  // .cabinet-wrapper {
+  //   // background-image: url('../assets/img/cabinet.jpg');
+  //   height: $picture-height;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  // .cabinet-layer {
+  //   backdrop-filter: blur(10px);
+  //   height: $picture-height;
+  //   width: 100%;
+  //   position: absolute;
+  // }
+
+  // .cabinet {
+  //   height: $picture-height;
+  //   object-fit: cover;
+  //   max-width: 1024px;
+  //   z-index: 1;
+  // }
+
+  .grid-2 {
+    display: grid;
+
+    @media screen and (min-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .at {
+    display: flex;
+    justify-content: center;
+
+    .at-icon {
+      max-width: 1.2rem;
+    }
+  }
+
+  .text {
+    color: $primary-color-dark;
+  }
+</style>
